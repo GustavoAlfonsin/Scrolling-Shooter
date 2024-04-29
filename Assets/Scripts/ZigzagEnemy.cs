@@ -15,7 +15,7 @@ public class ZigzagEnemy : Controller_Enemy
 
     void FixedUpdate()
     {
-        if (goingUp)
+        if (goingUp) 
         {
             rb.AddForce(new Vector3(-1, 1, 0) * enemySpeed);
         }

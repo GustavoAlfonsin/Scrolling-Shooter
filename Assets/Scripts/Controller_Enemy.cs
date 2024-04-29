@@ -29,12 +29,12 @@ public class Controller_Enemy : MonoBehaviour
 
     void ShootPlayer()
     {
-        if (Controller_Player._Player != null)
+        if (Controller_Player._Player != null) // Si el jugador no fue eliminado
         {
-            if (shootingCooldown <= 0)
+            if (shootingCooldown <= 0) // Y el "sootingCooldown es menor igual a 0
             {
-                Instantiate(enemyProjectile, transform.position, Quaternion.identity);
-                shootingCooldown = UnityEngine.Random.Range(1, 10);
+                Instantiate(enemyProjectile, transform.position, Quaternion.identity); // Instancia un proyectil en la posición del enemigo
+                shootingCooldown = UnityEngine.Random.Range(1, 10); // Reestablece el valor del tiempo
             }
         }
     }
@@ -52,10 +52,10 @@ public class Controller_Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Projectile"))
         {
-            GeneratePowerUp();
-            Destroy(collision.gameObject);
-            Destroy(this.gameObject);
-            Controller_Hud.points++;
+            GeneratePowerUp(); // Genera el powerUp
+            Destroy(collision.gameObject); //destruye el proyectil del jugador
+            Destroy(this.gameObject); //destruye el objeto enemigo
+            Controller_Hud.points++; // suma puntaje
         }
         if (collision.gameObject.CompareTag("Laser"))
         {
@@ -67,7 +67,7 @@ public class Controller_Enemy : MonoBehaviour
 
     private void GeneratePowerUp()
     {
-        int rnd = UnityEngine.Random.Range(0, 3);
+        int rnd = UnityEngine.Random.Range(0, 3); //es para definir la posibilidad de encontrar un powerUP
         if (rnd == 2)
         {
             Instantiate(powerUp, transform.position, Quaternion.identity);

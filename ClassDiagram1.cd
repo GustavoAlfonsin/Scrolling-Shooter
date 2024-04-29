@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Controller_Enemy" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAQACAAAQgAAAAAAAAAAAAAAIEIAAAAAAABAQA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_EnemyProjectile" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAACAAIAAEAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller_EnemyProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Hud" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAACAAABAABAAAAAAAAAAAAAEBAAAAAAAAAIA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Hud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Instantiator" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAACAAAAAAAEAAAAAAAAABAAABACAAAABAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Instantiator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Laser" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAiAAgABEBAIgAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\Controller_Laser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Missile" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAAiEAAgAEAAAAAAAAAAAAggCMAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Missile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Option" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASIAAAAAiAABABAAAAAAAAAAAAAAAAIAAAABAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Option.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Player" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUQoCAAAAyACAAAMBQAAEAkAAAAAARFIAAAABARQAMA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_PowerUp" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller_PowerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Projectile" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAABAEAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controller_Projectile_Double" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller_Projectile_Double.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FollowingEnemy" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAiAAIAAEAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\FollowingEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatternEnemy" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAiAAAAAECAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PatternEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Restart" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Restart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestScript" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TestScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZigzagEnemy" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAAECAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ZigzagEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
