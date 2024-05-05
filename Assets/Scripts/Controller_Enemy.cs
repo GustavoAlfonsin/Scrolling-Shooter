@@ -40,7 +40,7 @@ public class Controller_Enemy : MonoBehaviour
     }
 
 
-    private void CheckLimits()
+    private void CheckLimits() // Elimina el enemigo una vez pasado el limite en X
     {
         if (this.transform.position.x < xLimit)
         {
