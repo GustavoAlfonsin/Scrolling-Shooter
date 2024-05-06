@@ -22,6 +22,7 @@ public class Controller_Player : MonoBehaviour
     internal float shootingCount=0;
     internal bool forceField;
     internal bool laserOn;
+    internal bool destroyAllEnemy;
 
     public static bool lastKeyUp;
 
@@ -110,6 +111,10 @@ public class Controller_Player : MonoBehaviour
                 laser.GetComponent<Controller_Laser>().parent = this.gameObject;
                 //laser.GetComponent<Controller_Laser>().relase = false;
             }
+            else if (destroyAllEnemy)
+            {
+                destruirTodo();
+            }
             else
             {
                 Instantiate(projectile, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
@@ -177,9 +182,14 @@ public class Controller_Player : MonoBehaviour
             {
                 OptionListing();
             }
-            else if (powerUpCount >= 6)
+            else if (powerUpCount == 6)
             {
                 forceField = true;
+                powerUpCount = 0;
+            }
+            else if (powerUpCount >= 7)
+            {
+                destroyAllEnemy = true;
                 powerUpCount = 0;
             }
         }
@@ -253,4 +263,19 @@ public class Controller_Player : MonoBehaviour
             powerUpCount++;
         }
     }
+
+    private void destruirTodo()
+    {
+        Collider[] objetos = Physics.OverlapSphere(rb.transform.position, 100);
+        foreach(Collider enemigo in objetos)
+        {
+            if (enemigo.gameObject.CompareTag("Enemy"))
+            {
+                Destroy(enemigo.gameObject);
+                Controller_Hud.points++;
+            }
+        }
+        destroyAllEnemy = false;
+    }
+
 }
