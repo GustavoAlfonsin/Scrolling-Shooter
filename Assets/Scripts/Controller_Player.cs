@@ -6,7 +6,7 @@ using UnityEngine;
 public class Controller_Player : MonoBehaviour
 {
     public float speed = 5;
-
+    public float velocidadInicial = 5;
     private Rigidbody rb;
 
     public GameObject projectile;
@@ -104,16 +104,16 @@ public class Controller_Player : MonoBehaviour
             {
                 OnShooting();
             }
-
-            if (laserOn)
+            
+            if (destroyAllEnemy)
+            {
+                destruirTodo();
+            }
+            else if (laserOn)
             {
                 laser = Instantiate(laserProjectile, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
                 laser.GetComponent<Controller_Laser>().parent = this.gameObject;
                 //laser.GetComponent<Controller_Laser>().relase = false;
-            }
-            else if (destroyAllEnemy)
-            {
-                destruirTodo();
             }
             else
             {
